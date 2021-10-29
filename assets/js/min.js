@@ -1,8 +1,8 @@
-$(document).ready(function () {
-    $('.columns').theiaStickySidebar();
-});
+(function ($) {
+    'use strict'
 
-$(document).ready(function () {
+    $('.columns').theiaStickySidebar();
+
     $('.Unit').easyPieChart({
         size: 110,
         barColor: "#E56035",
@@ -21,5 +21,5 @@ $(document).ready(function () {
         lineCap: "circle",
         animate: 2000,
     });
-});
 
+})(jQuery);
