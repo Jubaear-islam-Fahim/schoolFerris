@@ -21,7 +21,7 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse desktop-block">
                 <ul class="navbar-nav ms-auto menu-list">
                     <li class="nav-item"><a class="nav-link" href="#"> Learn </a></li>
                     <li class="nav-item"><a class="nav-link" href="#"> Community </a></li>
@@ -39,6 +39,27 @@
                     </li>
                 </ul>
             </div>
+            <div class="phone-block">
+                <button class="phoneBars" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fa-solid fa-bars"></i></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="menuClose-icon">
+                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="phoneMenu">
+                            <li><a class="dropdown-item" href="#"> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"> Setting </a></li>
+                            <li><a class="dropdown-item" href="#"> Help Center </a></li>
+                            <li><a class="dropdown-item" href="#"> Log Out </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -47,7 +68,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="porum-content">
-                        <h1>The School of Ferris Community</h1>
+                        <h1 class="pb-4">The School of Ferris Community</h1>
                         <form action="/" class="search-form">
                             <input type="text" name="" placeholder="Search">
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -960,6 +981,13 @@
         </div>
     </main>
 
+    <div class="phone-block"> 
+        <ul class="phoneFooter ">
+            <li><a href="#"><img src="assets/img/b-book.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/b-chet.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/b-user.png" alt=""></a></li>
+        </ul>
+    </div>
 
 
 

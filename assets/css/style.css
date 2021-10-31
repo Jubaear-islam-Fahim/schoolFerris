@@ -111,6 +111,24 @@ p {
     grid-template-columns: 400px 1fr;
 }
 
+.phone-block {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+    .phone-block {
+        display: block;
+    }
+
+    .desktop-block {
+        display: none !important;
+    }
+
+    .protfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Sing Page */
 
 .sing-in-page-area {
@@ -1378,6 +1396,60 @@ p {
     height: 250px !important;
 }
 
+.phoneNotes ul {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 10px;
+}
+
+.phoneNotes li button {
+    border: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #BABABA;
+    text-transform: capitalize;
+}
+
+.phoneNotes li button:hover,
+.phoneNotes li .active {
+    color: var(--primary-color) !important;
+}
+
+.phoneFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    z-index: 11;
+    width: 100%;
+}
+
+.phoneFooter li {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.phoneFooter {}
+
+.post-ps {}
+
+.post-ps li {
+    display: inline-block;
+}
+
+main {
+    padding-bottom: 50px !important;
+}
+
 @media (min-width: 1025px) and (max-width: 1380px) {
     .notes-top p {
         font-size: 15px;
@@ -1387,7 +1459,389 @@ p {
         font-size: 15px;
     }
 
-    .sing-in-page-content { 
+    .sing-in-page-content {
         padding: 60px;
     }
+
+    .post-ps li {
+        font-size: 14px;
+    }
+
+    .community-rated-left {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        gap: 12px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+    .menu-area .navbar-brand img {
+        height: 60px;
+    }
+
+    .phoneBars {
+        border: 0;
+        color: var(--block-color);
+        background: none;
+        font-size: 28px;
+    }
+
+    .menuClose {
+        border: 2px solid #000;
+        background: no-repeat;
+        height: 35px;
+        width: 35px;
+        border-radius: 100px;
+    }
+
+    .menuClose-icon {
+        text-align: right;
+        padding: 13px 15px 0;
+    }
+
+    .phoneMenu li a {
+        font-weight: bold;
+        font-size: 18px;
+        color: var(--block-color);
+        padding: 10px 15px;
+    }
+
+    main {
+        padding-bottom: 80px !important;
+    }
+
+    .offcanvas-end {
+        width: 220px;
+    }
+
+    .profile-right-item {
+        padding: 20px 15px;
+    }
+
+    .courses-item .text {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .chart canvas {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .c-cont .title {
+        display: none;
+    }
+
+    .c-cont {
+        order: 1;
+    }
+
+    .courses-item {
+        gap: 0;
+    }
+
+    .c-cont-btn a {
+        min-width: 116px;
+        font-size: 11px;
+    }
+
+    .profile-det {
+        padding: 0 10px;
+    }
+
+    .user-profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .user-profile {
+        margin-top: -70px;
+    }
+
+    .profile-wrapper {
+        padding-top: 50px;
+    }
+
+    .courses-item .chart span {
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .courses-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 9px;
+    }
+
+    .coursesPhone-title {}
+
+    .coursesPhone-title h6 {
+        font-weight: 600;
+        color: var(--p-color);
+    }
+
+    .coursesPhone-title .h6 {
+        padding: 20px 0 10px;
+    }
+
+    .c-cont .subtitle {
+        font-size: 11px;
+    }
+
+    .createNote a {
+        color: var(--primary-color);
+        font-weight: 700;
+
+    }
+
+    .notes-list {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    .profile-right-item .courses-title .not-btn {
+        display: none;
+    }
+
+    .achievements li {
+        width: 80px;
+        height: 80px;
+    }
+
+    .learn-unit::before {
+        width: 334.38px;
+        height: 262.42px;
+        background-image: url(../img/VectorPhone2.png);
+    }
+
+    .learn-unit::after {
+        top: 262px;
+        left: 47px;
+        width: 346.93px;
+        height: 332.5px;
+        background-image: url(../img/VectorPhone3.png);
+        background-repeat: no-repeat;
+    }
+
+    .unit-item:nth-child(1) {
+        transform: translate(3cm, -1cm);
+    }
+
+    .unit-item:nth-child(2) {
+        transform: translate(-1cm, -3cm);
+    }
+
+    .unit-item:nth-child(3) {
+        transform: translate(0cm, -2cm);
+    }
+
+    .unit-item:nth-child(4) {
+        transform: translate(5cm, 0cm);
+        margin-top: -4.5cm;
+    }
+
+    .unit-item:nth-child(5) {
+        transform: translate(4cm, 0cm);
+        margin-top: 0.8cm;
+    }
+
+    .unit-item:nth-child(6) {
+        transform: translate(5.5cm, 0.4cm);
+    }
+
+    .unit-item:nth-child(7) {
+        transform: translate(2cm, -0.8cm);
+    }
+
+    .unit-item:nth-child(8) {
+        transform: translate(4cm, 1.4cm);
+    }
+
+    .unit-item:nth-child(9) {
+        transform: translate(0cm, 0cm);
+        margin: -3cm 0 0cm -1cm;
+    }
+
+    .unit-item:nth-child(9) img {
+        height: 133px;
+    }
+
+    .unit-item:nth-child(10) {
+        transform: translate(1cm, 2cm);
+    }
+
+    .unit-item:nth-child(11) {
+        transform: translate(6cm, -1cm);
+    }
+
+    .unit-item:nth-child(12) {
+        transform: translate(0.3cm, 0cm);
+        margin-top: 1cm;
+    }
+
+    .unit-item:nth-child(13) {
+        transform: translate(5cm, -2cm);
+    }
+
+    .unit-item:nth-child(14) {
+        transform: translate(3cm, 0cm);
+        margin-top: -1cm;
+    }
+
+    .unit-item {
+        width: 137px;
+    }
+
+    .learn-unit {
+        overflow: hidden;
+        padding: 37px 0 40px;
+        margin-top: 0 !important;
+    }
+
+    .learn-right {
+        padding: 20px 15px;
+    }
+
+    .units-progress {
+        grid-template-columns: 1fr;
+    }
+
+    .community-rated-item {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding: 13px;
+    }
+
+    .rated-list li .number {
+        display: none;
+    }
+
+    .community-rated-right {
+        margin-left: 0;
+    }
+
+    .rated-list li i {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .community-rated-left {
+        grid-template-columns: 65px 1fr;
+        gap: 10px;
+    }
+
+    .community-list h5 {
+        font-size: 16px;
+    }
+
+    .create-post-forum {
+        padding-top: 30px;
+    }
+
+    .my-post .title {
+        font-size: 20px;
+    }
+
+    .create-new-post {
+        font-size: 15px;
+    }
+
+    .postList li button {
+        font-size: 16px;
+    }
+
+    .more-notes-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        column-gap: 0;
+        background: #fff;
+        padding: 20px;
+    }
+
+    .writers-month-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 19px;
+    }
+
+    .post-admin.d-flex {
+        display: block !important;
+        text-align: center;
+    }
+
+    .more-notes-item .post-admin.d-flex {
+        display: grid !important;
+        text-align: left;
+        grid-template-columns: 50px 1fr;
+    }
+
+    .more-notes-item .post-admin-text ul {
+        display: flex !important;
+    }
+
+    .post-admin-text ul {
+        text-align: center;
+        display: block !important;
+    }
+
+    .more-notes-item .h4 {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .post-admin-text {
+        padding-top: 10px;
+    }
+
+    .all-notes-subBox {
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+
+    .all-notes-subBox-left {
+        grid-template-columns: repeat(auto-fill, minmax(28%, 1fr));
+        gap: 4px;
+    }
+
+    .form-select {
+        display: block;
+        width: 100%;
+        padding: 5px 4px 5px 5px;
+        font-size: .8rem;
+    }
+
+    .all-notes-contents {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        column-gap: 15px;
+        row-gap: 35px;
+        padding: 20px 15px;
+    }
+
+    .all-note-item .community-list ol li {
+        font-size: 13px;
+    }
+
+    .community-list ul li {
+        font-size: 11px;
+    }
+
+    .notes-top img {
+        display: none;
+    }
+
+    .porum-content .search-form {
+        margin-top: 20px;
+    }
+
+    .more-top-notes {
+        margin: 0 !important;
+    }
+
+    .more-notes-item {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+
 }

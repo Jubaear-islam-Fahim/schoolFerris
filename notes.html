@@ -21,7 +21,7 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse desktop-block">
                 <ul class="navbar-nav ms-auto menu-list">
                     <li class="nav-item"><a class="nav-link" href="#"> Learn </a></li>
                     <li class="nav-item"><a class="nav-link" href="#"> Community </a></li>
@@ -39,10 +39,31 @@
                     </li>
                 </ul>
             </div>
+            <div class="phone-block">
+                <button class="phoneBars" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fa-solid fa-bars"></i></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="menuClose-icon">
+                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="phoneMenu">
+                            <li><a class="dropdown-item" href="#"> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"> Setting </a></li>
+                            <li><a class="dropdown-item" href="#"> Help Center </a></li>
+                            <li><a class="dropdown-item" href="#"> Log Out </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <main class="pt-5 pb-5">
+    <main class="pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -441,7 +462,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -467,7 +488,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -493,7 +514,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -519,7 +540,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -545,7 +566,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -571,7 +592,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -597,7 +618,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -623,7 +644,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -649,7 +670,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -675,7 +696,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -701,7 +722,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -727,7 +748,7 @@
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
-                                        <ol class="d-flex">
+                                        <ol class="post-ps">
                                             <li>Course X</li>
                                             <li>Unit 1</li>
                                             <li>Chapter 2</li>
@@ -754,6 +775,14 @@
             </div>
         </div>
     </main>
+
+    <div class="phone-block"> 
+        <ul class="phoneFooter ">
+            <li><a href="#"><img src="assets/img/b-book.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/b-chet.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/b-user.png" alt=""></a></li>
+        </ul>
+    </div>
 
 
 

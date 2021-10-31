@@ -21,7 +21,7 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse desktop-block">
                 <ul class="navbar-nav ms-auto menu-list">
                     <li class="nav-item"><a class="nav-link" href="#"> Learn </a></li>
                     <li class="nav-item"><a class="nav-link" href="#"> Community </a></li>
@@ -39,10 +39,31 @@
                     </li>
                 </ul>
             </div>
+            <div class="phone-block">
+                <button class="phoneBars" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fa-solid fa-bars"></i></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="menuClose-icon">
+                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="phoneMenu">
+                            <li><a class="dropdown-item" href="#"> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"> Setting </a></li>
+                            <li><a class="dropdown-item" href="#"> Help Center </a></li>
+                            <li><a class="dropdown-item" href="#"> Log Out </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <main class="pt-5 pb-5">
+    <main class="pt-5">
         <div class="container">
             <div class="row protfolio-container">
                 <!-- Left -->
@@ -141,7 +162,7 @@
                                 <div class="courses-title pb-4">
                                     <div class="h4"><i class="fa-solid fa-clock-rotate-left"></i> My Courses</div>
                                 </div>
-                                <div class="courses-content ">
+                                <div class="courses-content desktop-block">
                                     <div class="courses-item">
                                         <div class="c-cont">
                                             <div class="title">Active Courses</div>
@@ -154,7 +175,7 @@
                                             <div class="subtitle">75% Completed</div>
                                         </div>
                                         <div class="box">
-                                            <div class="Unit chart" data-percent="60"><span>Unit 4</span></div>
+                                            <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
                                         </div>
                                     </div>
                                     <div class="courses-item">
@@ -173,6 +194,70 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="phone-block">
+                                    <div class="coursesPhone-title">
+                                        <h6>Active Courses</h6>
+                                        <div class="h6 fw-bold">The Rust Programming Language</div>
+                                    </div>
+                                    <div class="courses-content">
+                                        <div class="courses-item">
+                                            <div class="c-cont">
+                                                <div class="title">Progress</div>
+                                                <div class="subtitle">75% Completed</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="courses-item">
+                                            <div class="c-cont">
+                                                <div class="title">Learning Pase</div>
+                                                <div class="subtitle">Avg. Per Day</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="courses-item">
+                                            <div class="c-cont-btn">
+                                                <a href="#" class="theme-btn secondary-color">Continue learning</a>
+                                                <a href="#" class="theme-btn primary-color">Course notes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coursesPhone-title">
+                                        <div class="h6 fw-bold">Course X</div>
+                                    </div>
+                                    <div class="courses-content">
+                                        <div class="courses-item">
+                                            <div class="c-cont">
+                                                <div class="title">Progress</div>
+                                                <div class="subtitle">75% Completed</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="courses-item">
+                                            <div class="c-cont">
+                                                <div class="title">Learning Pase</div>
+                                                <div class="subtitle">Avg. Per Day</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="courses-item">
+                                            <div class="c-cont-btn">
+                                                <a href="#" class="theme-btn secondary-color">Continue learning</a>
+                                                <a href="#" class="theme-btn primary-color">Course notes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newCourses text-center pt-4">
+                                        <div class="h6 fw-bold">Start a new course</div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="profile-right-item courses">
@@ -181,8 +266,7 @@
                                     <a href="#" class="theme-btn not-btn"><i class="fa-solid fa-pencil"></i> New
                                         note</a>
                                 </div>
-                                <div class="notes-content">
-                                    
+                                <div class="notes-content desktop-block">
                                     <div class="notes-item">
                                         <h4 class="notes-title">Latest</h4>
                                         <div class="notes-list">
@@ -261,7 +345,115 @@
 
                                         <a href="#" class="seeall">See all</a>
                                     </div>
+                                </div>
 
+                                <div class="phoneNotes phone-block">
+                                    <ul class="nav nav-pills mb-3" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-notesOne-ta" data-bs-toggle="pill"
+                                                data-bs-target="#pills-notesOne" type="button" role="tab"
+                                                aria-controls="pills-notesOne" aria-selected="true">Latest</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-notesTwo-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-notesTwo" type="button" role="tab"
+                                                aria-controls="pills-notesTwo" aria-selected="false">Top Rated</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-noteThree-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-noteThree" type="button" role="tab"
+                                                aria-controls="pills-noteThree" aria-selected="false">Saved</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="pills-notesOne" role="tabpanel"
+                                            aria-labelledby="pills-notesOne-tab">
+                                            <div class="notes-item">
+                                                <div class="notes-list">
+                                                    <h5><a href="#">1Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+
+                                                <a href="#" class="seeall">See all</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-notesTwo" role="tabpanel"
+                                            aria-labelledby="pills-notesTwo-tab">
+                                            <div class="notes-item">
+                                                <div class="notes-list">
+                                                    <h5><a href="#">2Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+
+                                                <a href="#" class="seeall">See all</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-noteThree" role="tabpanel"
+                                            aria-labelledby="pills-noteThree-tab">
+                                            <div class="notes-item">
+                                                <div class="notes-list">
+                                                    <h5><a href="#">3Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+
+                                                <a href="#" class="seeall">See all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="createNote pt-4 text-center">
+                                    <a href="#"><i class="fa-solid fa-plus"></i> Create new note</a>
                                 </div>
                             </div>
 
@@ -271,7 +463,7 @@
                                     <a href="#" class="theme-btn not-btn"><i class="fa-solid fa-pencil"></i> New
                                         note</a>
                                 </div>
-                                <div class="notes-content">
+                                <div class="notes-content desktop-block">
                                     <div class="notes-item">
                                         <h4 class="notes-title">Latest</h4>
                                         <div class="notes-list">
@@ -352,6 +544,115 @@
                                     </div>
 
                                 </div>
+                                <div class="phoneNotes phone-block">
+                                    <ul class="nav nav-pills mb-3" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-notesFour-ta"
+                                                data-bs-toggle="pill" data-bs-target="#pills-notesFour" type="button"
+                                                role="tab" aria-controls="pills-notesFour"
+                                                aria-selected="true">Latest</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-notesFive-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-notesFive" type="button" role="tab"
+                                                aria-controls="pills-notesFive" aria-selected="false">Top Rated</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-noteSix-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-noteSix" type="button" role="tab"
+                                                aria-controls="pills-noteSix" aria-selected="false">Saved</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="pills-notesFour" role="tabpanel"
+                                            aria-labelledby="pills-notesFour-tab">
+                                            <div class="notes-item">
+                                                <div class="notes-list">
+                                                    <h5><a href="#">1Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+
+                                                <a href="#" class="seeall">See all</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-notesFive" role="tabpanel"
+                                            aria-labelledby="pills-notesFive-tab">
+                                            <div class="notes-item">
+                                                <div class="notes-list">
+                                                    <h5><a href="#">2Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+
+                                                <a href="#" class="seeall">See all</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-noteSix" role="tabpanel"
+                                            aria-labelledby="pills-noteSix-tab">
+                                            <div class="notes-item">
+                                                <div class="notes-list">
+                                                    <h5><a href="#">3Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <h5><a href="#">Lorem ipsum dolor...</a></h5>
+                                                    <ul>
+                                                        <li>10 minutes ago</li>
+                                                        <li><i class="fa-solid fa-comments"></i> 2</li>
+                                                    </ul>
+                                                </div>
+
+                                                <a href="#" class="seeall">See all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="createNote pt-4 text-center">
+                                    <a href="#"><i class="fa-solid fa-plus"></i> Create new note</a>
+                                </div>
                             </div>
 
                         </div>
@@ -361,7 +662,13 @@
         </div>
     </main>
 
-
+    <div class="phone-block"> 
+        <ul class="phoneFooter ">
+            <li><a href="#"><img src="assets/img/b-book.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/b-chet.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/b-user.png" alt=""></a></li>
+        </ul>
+    </div>
 
 
 
