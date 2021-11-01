@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-
 @import url('./reset.css');
-
 :root {
     --white-color: #FFFFFF;
     --primary-color: #E56035;
@@ -26,8 +24,6 @@ h1,
     font-family: 'Frank Ruhl Libre', serif;
 }
 
-
-
 h2,
 .h2 {
     font-family: 'Frank Ruhl Libre', serif;
@@ -38,28 +34,22 @@ h3,
     font-family: 'Frank Ruhl Libre', serif;
 }
 
-
 p {
     line-height: 1.5;
 }
 
 @media (min-width: 1025px) and (max-width: 1380px) {
-
     .h1,
     h1 {
         font-size: 2.2rem;
     }
-
     body {
         font-size: 16px;
     }
-
     p {
         font-size: 16px;
     }
-
 }
-
 
 .theme-btn {
     display: inline-block;
@@ -73,7 +63,7 @@ p {
     font-size: 14px;
     letter-spacing: .28px;
     text-align: center;
-    transition: all .4s linear 0s;
+    transition: all .2s linear 0s;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     display: inline-flex;
@@ -119,15 +109,14 @@ p {
     .phone-block {
         display: block;
     }
-
     .desktop-block {
         display: none !important;
     }
-
     .protfolio-container {
         grid-template-columns: 1fr;
     }
 }
+
 
 /* Sing Page */
 
@@ -210,47 +199,36 @@ p {
     .sing-in-page-area {
         padding: 5px;
     }
-
     .sing-in-page-content {
         padding: 00px;
         background: none;
         box-shadow: none;
     }
-
     .welcome-sing {
         display: block;
         text-align: center;
     }
-
     .sing-form form {
         display: block;
-
     }
-
     .welcome-sing img {
         width: auto;
         height: 120px;
         margin: 0 auto;
     }
-
     .sing-form form button {
         margin-top: 15px;
     }
-
     .sbu {
         text-align: center;
     }
-
     .back-home-icon {
         top: .5cm;
         left: .7cm;
     }
-
     .back-home-icon span {
         display: none;
     }
-
-
 }
 
 .dropdown-item:focus,
@@ -259,7 +237,9 @@ p {
     background-color: var(--primary-color) !important;
 }
 
+
 /* Menu */
+
 .menu-area {
     background-color: var(--white-color);
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
@@ -281,7 +261,11 @@ p {
 .menu-list li a {
     color: #BABABA;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.menu-list li a:hover {
+    color: var(--primary-color);
 }
 
 .menu-list .user-logo {
@@ -304,13 +288,11 @@ p {
     display: inline-block;
 }
 
-
 @media all and (min-width: 992px) {
     .navbar .dropdown-menu-end {
         right: 0;
         left: auto;
     }
-
     .navbar .nav-item .dropdown-menu {
         display: block;
         opacity: 0;
@@ -319,24 +301,19 @@ p {
         margin-top: 0;
         width: 200px;
     }
-
-
     .navbar .dropdown-menu.fade-down {
         top: 90%;
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
     }
-
     .navbar .dropdown-menu.fade-up {
         top: 160%;
     }
-
     .navbar .nav-item:hover .dropdown-menu a {
         font-weight: bold;
         font-size: 16px;
         color: var(--block-color);
     }
-
     .navbar .nav-item:hover .dropdown-menu {
         transition: .3s;
         opacity: 1;
@@ -346,7 +323,6 @@ p {
         background: #FFFFFF;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         padding: 18px 5px;
-
         gap: 9px;
         display: grid;
     }
@@ -358,6 +334,7 @@ p {
 .profile-wrapper {
     padding-top: 120px;
 }
+
 
 /* profile left */
 
@@ -376,6 +353,7 @@ p {
     margin-top: -115px;
 }
 
+
 /* .user-profile::before {
     content: '';
     position: absolute;
@@ -393,11 +371,13 @@ p {
 
 .profile-det ul {}
 
-
 .profile-det .title {
     padding-bottom: 10px;
     font-weight: 600;
     font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 
 .profile-det .title i {}
@@ -468,8 +448,6 @@ p {
     border-radius: 10px;
 }
 
-
-
 .achievements {}
 
 .achievements ul {
@@ -490,8 +468,9 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 4px;
-    font-size: 12px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
     line-height: 1.5;
 }
 
@@ -544,6 +523,7 @@ p {
     border-bottom: 1px solid var(--block-color);
 }
 
+
 /* profile right */
 
 .profile-right {
@@ -573,6 +553,14 @@ p {
     gap: 7px;
 }
 
+.profile-right-item .courses-title .h4 {
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
 
 .courses-title {
     display: flex;
@@ -641,7 +629,6 @@ p {
     border-radius: 5px;
 }
 
-
 .notes-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -708,7 +695,6 @@ p {
     color: var(--primary-color);
 }
 
-
 .notes-top {
     padding-bottom: -50px;
 }
@@ -735,12 +721,9 @@ p {
 }
 
 
-
 /* 
     Fourm
 */
-
-
 
 .search-form {
     position: relative;
@@ -770,7 +753,6 @@ p {
     transform: translateY(-50%);
     color: #BABABA;
 }
-
 
 .forum-tabs-content .tab-content {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -880,6 +862,7 @@ p {
     padding-top: 10px;
 }
 
+
 /* .community-rated .theme-btn {
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -918,7 +901,6 @@ p {
 .postList li button:hover,
 .postList li .active {
     color: var(--primary-color) !important;
-
 }
 
 .postList li button {
@@ -931,7 +913,6 @@ p {
     color: #BABABA;
     text-transform: capitalize;
 }
-
 
 .discussion-content {
     padding: 25px;
@@ -1156,7 +1137,6 @@ p {
     width: 200px;
 }
 
-
 .unit-number {
     width: 75px;
     height: 75px;
@@ -1287,7 +1267,6 @@ p {
     padding: 4px;
     font-weight: 700;
 }
-
 
 .units-progress {
     display: grid;
@@ -1450,23 +1429,98 @@ main {
     padding-bottom: 50px !important;
 }
 
+.userN i {
+    transform: translateY(-3px);
+}
+
+.percent {
+    position: relative;
+}
+
+.percent1,
+.percent2,
+svg,
+circle {
+    width: 115px;
+    height: 115px;
+    margin: 0 auto;
+}
+
+.percent circle {
+    position: absolute;
+    fill: none;
+    stroke-width: 10;
+    transform: translate(10px, 10px);
+    stroke-dasharray: 300;
+    stroke-linecap: round;
+}
+
+.percent1 circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #FCDDCF;
+}
+
+.percent2 circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #D4E7E7;
+}
+
+.percent1 svg {
+    transform: rotate(-170deg);
+}
+
+.percent2 svg {
+    transform: rotate(280deg);
+}
+
+.percentN {
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.percent1 circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke: #EB7245;
+    animation: percent 1.5s linear;
+    animation-delay: 1s;
+}
+
+.percent2 circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 43) / 100);
+    stroke: #4F9D9D;
+    animation: percent 1.8s linear;
+    animation-delay: 1.2s;
+}
+
+@keyframes percent {
+    0% {
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+    }
+}
+
+.fa-comments:before {
+    content: url(../img/icon/ant-design_comment-outlined.png);
+}
+
 @media (min-width: 1025px) and (max-width: 1380px) {
     .notes-top p {
         font-size: 15px;
     }
-
     .more-notes-item p {
         font-size: 15px;
     }
-
     .sing-in-page-content {
         padding: 60px;
     }
-
     .post-ps li {
         font-size: 14px;
     }
-
     .community-rated-left {
         display: grid;
         grid-template-columns: 80px 1fr;
@@ -1478,14 +1532,12 @@ main {
     .menu-area .navbar-brand img {
         height: 60px;
     }
-
     .phoneBars {
         border: 0;
         color: var(--block-color);
         background: none;
         font-size: 28px;
     }
-
     .menuClose {
         border: 2px solid #000;
         background: no-repeat;
@@ -1493,127 +1545,99 @@ main {
         width: 35px;
         border-radius: 100px;
     }
-
     .menuClose-icon {
         text-align: right;
         padding: 13px 15px 0;
     }
-
     .phoneMenu li a {
         font-weight: bold;
         font-size: 18px;
         color: var(--block-color);
         padding: 10px 15px;
     }
-
     main {
         padding-bottom: 80px !important;
     }
-
     .offcanvas-end {
         width: 220px;
     }
-
     .profile-right-item {
         padding: 20px 15px;
     }
-
     .courses-item .text {
         font-size: 18px;
         width: 100%;
     }
-
     .chart canvas {
         width: 75px !important;
         height: 75px !important;
     }
-
     .c-cont .title {
         display: none;
     }
-
     .c-cont {
         order: 1;
     }
-
     .courses-item {
         gap: 0;
     }
-
     .c-cont-btn a {
-        min-width: 116px;
-        font-size: 11px;
+        min-width: 105px;
+        font-size: 10px;
     }
-
     .profile-det {
         padding: 0 10px;
     }
-
     .user-profile img {
         width: 150px;
         height: 150px;
     }
-
     .user-profile {
         margin-top: -70px;
     }
-
     .profile-wrapper {
         padding-top: 50px;
     }
-
     .courses-item .chart span {
         font-weight: 700;
         font-size: 13px;
     }
-
     .courses-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 9px;
+        gap: 2px;
     }
-
     .coursesPhone-title {}
-
     .coursesPhone-title h6 {
         font-weight: 600;
         color: var(--p-color);
     }
-
     .coursesPhone-title .h6 {
         padding: 20px 0 10px;
     }
-
     .c-cont .subtitle {
         font-size: 11px;
     }
-
     .createNote a {
         color: var(--primary-color);
         font-weight: 700;
-
     }
-
     .notes-list {
         padding-bottom: 5px;
         margin-bottom: 5px;
     }
-
     .profile-right-item .courses-title .not-btn {
         display: none;
     }
-
     .achievements li {
         width: 80px;
         height: 80px;
     }
-
     .learn-unit::before {
         width: 334.38px;
         height: 262.42px;
         background-image: url(../img/VectorPhone2.png);
     }
-
     .learn-unit::after {
         top: 262px;
         left: 47px;
@@ -1622,134 +1646,104 @@ main {
         background-image: url(../img/VectorPhone3.png);
         background-repeat: no-repeat;
     }
-
     .unit-item:nth-child(1) {
         transform: translate(3cm, -1cm);
     }
-
     .unit-item:nth-child(2) {
         transform: translate(-1cm, -3cm);
     }
-
     .unit-item:nth-child(3) {
         transform: translate(0cm, -2cm);
     }
-
     .unit-item:nth-child(4) {
         transform: translate(5cm, 0cm);
         margin-top: -4.5cm;
     }
-
     .unit-item:nth-child(5) {
         transform: translate(4cm, 0cm);
         margin-top: 0.8cm;
     }
-
     .unit-item:nth-child(6) {
         transform: translate(5.5cm, 0.4cm);
     }
-
     .unit-item:nth-child(7) {
         transform: translate(2cm, -0.8cm);
     }
-
     .unit-item:nth-child(8) {
         transform: translate(4cm, 1.4cm);
     }
-
     .unit-item:nth-child(9) {
         transform: translate(0cm, 0cm);
         margin: -3cm 0 0cm -1cm;
     }
-
     .unit-item:nth-child(9) img {
         height: 133px;
     }
-
     .unit-item:nth-child(10) {
         transform: translate(1cm, 2cm);
     }
-
     .unit-item:nth-child(11) {
         transform: translate(6cm, -1cm);
     }
-
     .unit-item:nth-child(12) {
         transform: translate(0.3cm, 0cm);
         margin-top: 1cm;
     }
-
     .unit-item:nth-child(13) {
         transform: translate(5cm, -2cm);
     }
-
     .unit-item:nth-child(14) {
         transform: translate(3cm, 0cm);
         margin-top: -1cm;
     }
-
     .unit-item {
         width: 137px;
     }
-
     .learn-unit {
         overflow: hidden;
         padding: 37px 0 40px;
         margin-top: 0 !important;
     }
-
     .learn-right {
         padding: 20px 15px;
     }
-
     .units-progress {
         grid-template-columns: 1fr;
     }
-
     .community-rated-item {
         grid-template-columns: 1fr;
         gap: 0px;
         padding: 13px;
     }
-
     .rated-list li .number {
         display: none;
     }
-
     .community-rated-right {
         margin-left: 0;
     }
-
     .rated-list li i {
         padding-top: 10px;
         font-size: 16px;
     }
-
     .community-rated-left {
         grid-template-columns: 65px 1fr;
         gap: 10px;
     }
-
     .community-list h5 {
         font-size: 16px;
     }
-
     .create-post-forum {
         padding-top: 30px;
     }
-
     .my-post .title {
         font-size: 20px;
     }
-
     .create-new-post {
         font-size: 15px;
     }
-
     .postList li button {
         font-size: 16px;
     }
-
     .more-notes-content {
         display: grid;
         grid-template-columns: 1fr;
@@ -1758,58 +1752,47 @@ main {
         background: #fff;
         padding: 20px;
     }
-
     .writers-month-item {
         grid-template-columns: 1fr 1fr;
         gap: 19px;
     }
-
     .post-admin.d-flex {
         display: block !important;
         text-align: center;
     }
-
     .more-notes-item .post-admin.d-flex {
         display: grid !important;
         text-align: left;
         grid-template-columns: 50px 1fr;
     }
-
     .more-notes-item .post-admin-text ul {
         display: flex !important;
     }
-
     .post-admin-text ul {
         text-align: center;
         display: block !important;
     }
-
     .more-notes-item .h4 {
         padding-bottom: 10px;
         font-size: 20px;
     }
-
     .post-admin-text {
         padding-top: 10px;
     }
-
     .all-notes-subBox {
         grid-template-columns: 1fr;
         gap: 10px
     }
-
     .all-notes-subBox-left {
         grid-template-columns: repeat(auto-fill, minmax(28%, 1fr));
         gap: 4px;
     }
-
     .form-select {
         display: block;
         width: 100%;
         padding: 5px 4px 5px 5px;
         font-size: .8rem;
     }
-
     .all-notes-contents {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
@@ -1817,31 +1800,35 @@ main {
         row-gap: 35px;
         padding: 20px 15px;
     }
-
     .all-note-item .community-list ol li {
         font-size: 13px;
     }
-
     .community-list ul li {
         font-size: 11px;
     }
-
     .notes-top img {
         display: none;
     }
-
     .porum-content .search-form {
         margin-top: 20px;
     }
-
     .more-top-notes {
         margin: 0 !important;
     }
-
     .more-notes-item {
         border-bottom: 1px solid #eee;
         padding-bottom: 25px;
         margin-bottom: 25px;
     }
-
+    .percent1,
+    .percent2,
+    svg,
+    circle {
+        width: 87px;
+        height: 92px;
+        margin: 0 auto;
+    }
+    .percentN {
+        font-size: 13px;
+    }
 }

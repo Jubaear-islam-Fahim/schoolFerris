@@ -27,7 +27,9 @@
                     <li class="nav-item"><a class="nav-link" href="#"> Community </a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link user-logo" href="#" data-bs-toggle="dropdown">
-                            User Name
+                            <div class="userN">
+                                User Name <i class="fa-solid fa-sort-down"></i>
+                            </div>
                             <img src="assets/img/user.png" alt="user">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end fade-down">
@@ -40,15 +42,12 @@
                 </ul>
             </div>
             <div class="phone-block">
-                <button class="phoneBars" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                <button class="phoneBars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                         class="fa-solid fa-bars"></i></button>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="menuClose-icon">
-                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas"
-                            aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
+                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="phoneMenu">
@@ -78,7 +77,7 @@
                                     profile</a>
                             </div>
                             <div class="personal-balance profile-det">
-                                <div class="h4 title"><i class="fa-solid fa-dollar-sign"></i> Personal Balance</div>
+                                <div class="h4 title"><img src="assets/img/icon/dolllar.png"> Personal Balance</div>
                                 <ul>
                                     <li>
                                         <i class="fa-solid fa-bitcoin-sign"></i>
@@ -112,7 +111,7 @@
                                 </div>
                             </div>
                             <div class="achievements profile-det">
-                                <div class="h4 title"><i class="fa-solid fa-medal"></i> Achievements</div>
+                                <div class="h4 title"><img src="assets/img/icon/medal.png"> Achievements</div>
                                 <ul>
                                     <li>Level 4</li>
                                     <li>High Tipper</li>
@@ -120,7 +119,7 @@
                                 </ul>
                             </div>
                             <div class="certificates profile-det">
-                                <div class="h4 title"><i class="fa-solid fa-book"></i> Certificates</div>
+                                <div class="h4 title"><img src="assets/img/icon/certificates.png" alt=""> Certificates</div>
                                 <ul>
                                     <li>
                                         <img src="assets/img/membership.png" alt="">
@@ -160,7 +159,7 @@
                         <div class="profile-right">
                             <div class="profile-right-item courses">
                                 <div class="courses-title pb-4">
-                                    <div class="h4"><i class="fa-solid fa-clock-rotate-left"></i> My Courses</div>
+                                    <div class="h4"><img src="assets/img/icon/mdi_progress-check.png" alt=""> My Courses</div>
                                 </div>
                                 <div class="courses-content desktop-block">
                                     <div class="courses-item">
@@ -174,18 +173,32 @@
                                             <div class="title">Progress</div>
                                             <div class="subtitle">75% Completed</div>
                                         </div>
-                                        <div class="box">
-                                            <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                        <div class="percent percent1">
+                                            <svg>
+                                                <circle cx="45" cy="45" r="45"></circle>
+                                                <circle cx="45" cy="45" r="45"></circle>
+                                            </svg>
+                                            <span class="percentN">Unit 4</span>
                                         </div>
+                                        <!-- <div class="box">
+                                            <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                        </div> -->
                                     </div>
                                     <div class="courses-item">
                                         <div class="c-cont">
                                             <div class="title">Learning Pase</div>
                                             <div class="subtitle">Avg. Per Day</div>
                                         </div>
-                                        <div class="box">
-                                            <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                        <div class="percent percent2">
+                                            <svg>
+                                                <circle cx="45" cy="45" r="45"></circle>
+                                                <circle cx="45" cy="45" r="45"></circle>
+                                            </svg>
+                                            <span class="percentN">2 hours</span>
                                         </div>
+                                        <!-- <div class="box">
+                                            <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                        </div> -->
                                     </div>
                                     <div class="courses-item">
                                         <div class="c-cont-btn">
@@ -205,18 +218,32 @@
                                                 <div class="title">Progress</div>
                                                 <div class="subtitle">75% Completed</div>
                                             </div>
-                                            <div class="box">
-                                                <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                            <div class="percent percent1">
+                                                <svg>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                </svg>
+                                                <span class="percentN">Unit 4</span>
                                             </div>
+                                            <!-- <div class="box">
+                                                <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                            </div> -->
                                         </div>
                                         <div class="courses-item">
                                             <div class="c-cont">
                                                 <div class="title">Learning Pase</div>
                                                 <div class="subtitle">Avg. Per Day</div>
                                             </div>
-                                            <div class="box">
-                                                <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                            <div class="percent percent2">
+                                                <svg>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                </svg>
+                                                <span class="percentN">2 hours</span>
                                             </div>
+                                            <!-- <div class="box">
+                                                <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                            </div> -->
                                         </div>
                                         <div class="courses-item">
                                             <div class="c-cont-btn">
@@ -234,18 +261,32 @@
                                                 <div class="title">Progress</div>
                                                 <div class="subtitle">75% Completed</div>
                                             </div>
-                                            <div class="box">
-                                                <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                            <div class="percent percent1">
+                                                <svg>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                </svg>
+                                                <span class="percentN">Unit 4</span>
                                             </div>
+                                            <!-- <div class="box">
+                                                <div class="Unit chart" data-percent="75"><span>Unit 4</span></div>
+                                            </div> -->
                                         </div>
                                         <div class="courses-item">
                                             <div class="c-cont">
                                                 <div class="title">Learning Pase</div>
                                                 <div class="subtitle">Avg. Per Day</div>
                                             </div>
-                                            <div class="box">
-                                                <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                            <div class="percent percent2">
+                                                <svg>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                    <circle cx="35" cy="35" r="35"></circle>
+                                                </svg>
+                                                <span class="percentN">2 hours</span>
                                             </div>
+                                            <!-- <div class="box">
+                                                <div class="hours2 chart" data-percent="20"><span>2 hours</span></div>
+                                            </div> -->
                                         </div>
                                         <div class="courses-item">
                                             <div class="c-cont-btn">
@@ -262,7 +303,7 @@
 
                             <div class="profile-right-item courses">
                                 <div class="courses-title pb-4">
-                                    <div class="h4"><i class="fa-solid fa-note-sticky"></i> My Notes</div>
+                                    <div class="h4"><img src="assets/img/icon/tabler_notes.png" alt=""> My Notes</div>
                                     <a href="#" class="theme-btn not-btn"><i class="fa-solid fa-pencil"></i> New
                                         note</a>
                                 </div>
@@ -350,24 +391,17 @@
                                 <div class="phoneNotes phone-block">
                                     <ul class="nav nav-pills mb-3" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="pills-notesOne-ta" data-bs-toggle="pill"
-                                                data-bs-target="#pills-notesOne" type="button" role="tab"
-                                                aria-controls="pills-notesOne" aria-selected="true">Latest</button>
+                                            <button class="nav-link active" id="pills-notesOne-ta" data-bs-toggle="pill" data-bs-target="#pills-notesOne" type="button" role="tab" aria-controls="pills-notesOne" aria-selected="true">Latest</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-notesTwo-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-notesTwo" type="button" role="tab"
-                                                aria-controls="pills-notesTwo" aria-selected="false">Top Rated</button>
+                                            <button class="nav-link" id="pills-notesTwo-tab" data-bs-toggle="pill" data-bs-target="#pills-notesTwo" type="button" role="tab" aria-controls="pills-notesTwo" aria-selected="false">Top Rated</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-noteThree-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-noteThree" type="button" role="tab"
-                                                aria-controls="pills-noteThree" aria-selected="false">Saved</button>
+                                            <button class="nav-link" id="pills-noteThree-tab" data-bs-toggle="pill" data-bs-target="#pills-noteThree" type="button" role="tab" aria-controls="pills-noteThree" aria-selected="false">Saved</button>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="pills-notesOne" role="tabpanel"
-                                            aria-labelledby="pills-notesOne-tab">
+                                        <div class="tab-pane fade show active" id="pills-notesOne" role="tabpanel" aria-labelledby="pills-notesOne-tab">
                                             <div class="notes-item">
                                                 <div class="notes-list">
                                                     <h5><a href="#">1Lorem ipsum dolor...</a></h5>
@@ -394,8 +428,7 @@
                                                 <a href="#" class="seeall">See all</a>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-notesTwo" role="tabpanel"
-                                            aria-labelledby="pills-notesTwo-tab">
+                                        <div class="tab-pane fade" id="pills-notesTwo" role="tabpanel" aria-labelledby="pills-notesTwo-tab">
                                             <div class="notes-item">
                                                 <div class="notes-list">
                                                     <h5><a href="#">2Lorem ipsum dolor...</a></h5>
@@ -422,8 +455,7 @@
                                                 <a href="#" class="seeall">See all</a>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-noteThree" role="tabpanel"
-                                            aria-labelledby="pills-noteThree-tab">
+                                        <div class="tab-pane fade" id="pills-noteThree" role="tabpanel" aria-labelledby="pills-noteThree-tab">
                                             <div class="notes-item">
                                                 <div class="notes-list">
                                                     <h5><a href="#">3Lorem ipsum dolor...</a></h5>
@@ -452,14 +484,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="createNote pt-4 text-center">
+                                <div class="createNote pt-4 text-center phone-block">
                                     <a href="#"><i class="fa-solid fa-plus"></i> Create new note</a>
                                 </div>
                             </div>
 
                             <div class="profile-right-item courses">
                                 <div class="courses-title pb-4">
-                                    <div class="h4"><i class="fa-solid fa-message"></i> Forum Posts</div>
+                                    <div class="h4"><img src="assets/img/icon/message.png" alt=""> Forum Posts</div>
                                     <a href="#" class="theme-btn not-btn"><i class="fa-solid fa-pencil"></i> New
                                         note</a>
                                 </div>
@@ -547,25 +579,17 @@
                                 <div class="phoneNotes phone-block">
                                     <ul class="nav nav-pills mb-3" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="pills-notesFour-ta"
-                                                data-bs-toggle="pill" data-bs-target="#pills-notesFour" type="button"
-                                                role="tab" aria-controls="pills-notesFour"
-                                                aria-selected="true">Latest</button>
+                                            <button class="nav-link active" id="pills-notesFour-ta" data-bs-toggle="pill" data-bs-target="#pills-notesFour" type="button" role="tab" aria-controls="pills-notesFour" aria-selected="true">Latest</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-notesFive-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-notesFive" type="button" role="tab"
-                                                aria-controls="pills-notesFive" aria-selected="false">Top Rated</button>
+                                            <button class="nav-link" id="pills-notesFive-tab" data-bs-toggle="pill" data-bs-target="#pills-notesFive" type="button" role="tab" aria-controls="pills-notesFive" aria-selected="false">Top Rated</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-noteSix-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-noteSix" type="button" role="tab"
-                                                aria-controls="pills-noteSix" aria-selected="false">Saved</button>
+                                            <button class="nav-link" id="pills-noteSix-tab" data-bs-toggle="pill" data-bs-target="#pills-noteSix" type="button" role="tab" aria-controls="pills-noteSix" aria-selected="false">Saved</button>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="pills-notesFour" role="tabpanel"
-                                            aria-labelledby="pills-notesFour-tab">
+                                        <div class="tab-pane fade show active" id="pills-notesFour" role="tabpanel" aria-labelledby="pills-notesFour-tab">
                                             <div class="notes-item">
                                                 <div class="notes-list">
                                                     <h5><a href="#">1Lorem ipsum dolor...</a></h5>
@@ -592,8 +616,7 @@
                                                 <a href="#" class="seeall">See all</a>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-notesFive" role="tabpanel"
-                                            aria-labelledby="pills-notesFive-tab">
+                                        <div class="tab-pane fade" id="pills-notesFive" role="tabpanel" aria-labelledby="pills-notesFive-tab">
                                             <div class="notes-item">
                                                 <div class="notes-list">
                                                     <h5><a href="#">2Lorem ipsum dolor...</a></h5>
@@ -620,8 +643,7 @@
                                                 <a href="#" class="seeall">See all</a>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-noteSix" role="tabpanel"
-                                            aria-labelledby="pills-noteSix-tab">
+                                        <div class="tab-pane fade" id="pills-noteSix" role="tabpanel" aria-labelledby="pills-noteSix-tab">
                                             <div class="notes-item">
                                                 <div class="notes-list">
                                                     <h5><a href="#">3Lorem ipsum dolor...</a></h5>
@@ -650,7 +672,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="createNote pt-4 text-center">
+                                <div class="createNote pt-4 text-center phone-block">
                                     <a href="#"><i class="fa-solid fa-plus"></i> Create new note</a>
                                 </div>
                             </div>
@@ -662,11 +684,17 @@
         </div>
     </main>
 
-    <div class="phone-block"> 
+    <div class="phone-block">
         <ul class="phoneFooter ">
-            <li><a href="#"><img src="assets/img/b-book.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-chet.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-user.png" alt=""></a></li>
+            <li>
+                <a href="#"><img src="assets/img/b-book.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-chet.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-user.png" alt=""></a>
+            </li>
         </ul>
     </div>
 
