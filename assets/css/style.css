@@ -884,6 +884,10 @@ p {
     align-self: center;
 }
 
+.create-new-post:hover {
+    color: var(--secondary-color);
+}
+
 .my-post-content {
     padding: 25px;
     background: #FFFFFF;
@@ -1158,7 +1162,7 @@ p {
 }
 
 .unit-item img {
-    filter: invert(67%) sepia(0%) saturate(29%) hue-rotate(135deg) brightness(84%) contrast(84%)
+    filter: grayscale(120%);
 }
 
 .unit-item.active img {
@@ -1241,9 +1245,13 @@ p {
 
 .unit-item h6 {
     font-weight: 700;
-    color: var(--block-color);
+    color: var(--p-color);
     width: 155px;
     font-size: 14px;
+}
+
+.unit-item.active h6 {
+    color: var(--block-color);
 }
 
 .learnNot-lists {
@@ -1331,6 +1339,14 @@ p {
     font-weight: bold;
     font-size: 18px;
     padding: 10px 0 10px;
+}
+
+.learn-notes-item p {
+    font-weight: 600;
+}
+
+.learn-notes-item a {
+    color: var(--secondary-color);
 }
 
 .moreBtn .theme-btn {
@@ -1508,6 +1524,11 @@ circle {
     content: url(../img/icon/ant-design_comment-outlined.png);
 }
 
+.fa-bars:before,
+.fa-navicon:before {
+    content: url(../img/icon/navIcon.png);
+}
+
 @media (min-width: 1025px) and (max-width: 1380px) {
     .notes-top p {
         font-size: 15px;
@@ -1562,7 +1583,7 @@ circle {
         width: 220px;
     }
     .profile-right-item {
-        padding: 20px 15px;
+        padding: 20px 10px;
     }
     .courses-item .text {
         font-size: 18px;
@@ -1824,11 +1845,15 @@ circle {
     .percent2,
     svg,
     circle {
-        width: 87px;
-        height: 92px;
+        width: 75px;
+        height: 83px;
         margin: 0 auto;
     }
     .percentN {
         font-size: 13px;
+    }
+    .percent circle {
+        stroke-width: 7px;
+        stroke-dasharray: 275;
     }
 }

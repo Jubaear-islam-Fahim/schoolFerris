@@ -22,76 +22,25 @@
     //     animate: 2000,
     // });
 
+    window.onload = function() {
+        var options = {
+            animationEnabled: true,
 
-    var options = {
-        animationEnabled: true,
-        title: {
-            // text: "Daily Progress"
-        },
-        axisX: {
-            valueFormatString: "MMM"
-        },
-        axisY: {
-            // title: "Sales (in USD)",
-            prefix: "$",
-        },
-        data: [{
-            yValueFormatString: "$#,###",
-            xValueFormatString: "MMMM",
-            yValueFormatString: "#0.0" % "",
-            type: "spline",
-            dataPoints: [{
-                    x: new Date(2021, 0),
-                    y: 25060
-                },
-                {
-                    x: new Date(2021, 1),
-                    y: 27980
-                },
-                {
-                    x: new Date(2021, 2),
-                    y: 33800
-                },
-                {
-                    x: new Date(2021, 3),
-                    y: 49400
-                },
-                {
-                    x: new Date(2021, 4),
-                    y: 40260
-                },
-                {
-                    x: new Date(2021, 5),
-                    y: 33900
-                },
-                {
-                    x: new Date(2021, 6),
-                    y: 48000
-                },
-                {
-                    x: new Date(2021, 7),
-                    y: 31500
-                },
-                {
-                    x: new Date(2021, 8),
-                    y: 32300
-                },
-                {
-                    x: new Date(2021, 9),
-                    y: 42000
-                },
-                {
-                    x: new Date(2021, 10),
-                    y: 52160
-                },
-                {
-                    x: new Date(2021, 11),
-                    y: 49400
-                }
-            ]
-        }]
-    };
-    $("#chartContainer").CanvasJSChart(options);
-
+            data: [{
+                type: "spline",
+                color: "#499A9A",
+                dataPoints: [
+                    { y: 0 },
+                    { y: 12 },
+                    { y: 30 },
+                    { y: 14 },
+                    { y: 6 },
+                    { y: 24 },
+                    { y: 10 }
+                ]
+            }]
+        };
+        $("#chartContainer").CanvasJSChart(options);
+    }
 
 })(jQuery);
