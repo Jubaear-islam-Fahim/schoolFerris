@@ -18,16 +18,21 @@
 
     <nav class="navbar navbar-expand-lg menu-area">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
             <div class="collapse navbar-collapse desktop-block">
                 <ul class="navbar-nav ms-auto menu-list">
-                    <li class="nav-item"><a class="nav-link" href="#"> Learn </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Community </a></li>
+                    <li class="nav-item"><a class="nav-link" href="learn.html"> Learn </a></li>
+                    <li class="nav-item"><a class="nav-link" href="notes.html"> Notes </a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html"> Forum </a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat/chat1.html"> Chat </a></li>
+                    <li class="nav-item"><a class="nav-link" href="sing-in.html"> Sing </a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link user-logo" href="#" data-bs-toggle="dropdown">
-                            User Name
+                            <div class="userN">
+                                User Name <img src="assets/img/icon/arrowDown.png">
+                            </div>
                             <img src="assets/img/user.png" alt="user">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end fade-down">
@@ -40,15 +45,12 @@
                 </ul>
             </div>
             <div class="phone-block">
-                <button class="phoneBars" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                <button class="phoneBars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                         class="fa-solid fa-bars"></i></button>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="menuClose-icon">
-                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas"
-                            aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
+                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="phoneMenu">
@@ -81,32 +83,27 @@
                     <div class="forum-tabs-content">
                         <ul class="nav nav-tabs forum-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="top-rated-tab" data-bs-toggle="tab"
-                                    data-bs-target="#top-rated" type="button" role="tab" aria-controls="top-rated"
-                                    aria-selected="true">
+                                <button class="nav-link active" id="top-rated-tab" data-bs-toggle="tab" data-bs-target="#top-rated" type="button" role="tab" aria-controls="top-rated" aria-selected="true">
                                     Top rated
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="newest-tab" data-bs-toggle="tab" data-bs-target="#newest"
-                                    type="button" role="tab" aria-controls="newest" aria-selected="false">
+                                <button class="nav-link" id="newest-tab" data-bs-toggle="tab" data-bs-target="#newest" type="button" role="tab" aria-controls="newest" aria-selected="false">
                                     Newest
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="starred-tab" data-bs-toggle="tab" data-bs-target="#starred"
-                                    type="button" role="tab" aria-controls="starred" aria-selected="false">
+                                <button class="nav-link" id="starred-tab" data-bs-toggle="tab" data-bs-target="#starred" type="button" role="tab" aria-controls="starred" aria-selected="false">
                                     Starred
                                 </button>
                             </li>
                         </ul>
                         <div class="tab-content bg-white" id="myTabContent">
-                            <div class="tab-pane fade show active" id="top-rated" role="tabpanel"
-                                aria-labelledby="top-rated">
+                            <div class="tab-pane fade show active" id="top-rated" role="tabpanel" aria-labelledby="top-rated">
                                 <div class="community-rated">
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us1.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -135,7 +132,7 @@
                                     </div>
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us2.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -164,7 +161,7 @@
                                     </div>
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us3.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -193,7 +190,7 @@
                                     </div>
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us4.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -222,7 +219,7 @@
                                     </div>
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us5.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -251,7 +248,7 @@
                                     </div>
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us6.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -280,7 +277,7 @@
                                     </div>
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us7.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -309,7 +306,7 @@
                                     </div>
                                     <div class="community-rated-item">
                                         <div class="community-rated-left">
-                                            <img src="assets/img/user.png" alt="">
+                                            <img src="assets/img/us8.png" alt="">
                                             <div class="community-list">
                                                 <h5><a href="#">Lorem ipsum dolor sit amet</a></h5>
                                                 <ul>
@@ -814,7 +811,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="text-center py-4">
+                                    <div class="text-center py-5">
                                         <button class="theme-btn btn-md">Load More</button>
                                     </div>
                                 </div>
@@ -827,38 +824,31 @@
                         <div class="my-post">
                             <div class="h5 title">My Posts</div>
                             <a href="#" class="create-new-post">
-                                <i class="fa-solid fa-plus"></i> Create New Post
+                                <img src="assets/img/icon/ant-design_plus-circle-outlined.png" alt=""> Create New Post
                             </a>
                         </div>
                         <div class="my-post-content">
                             <ul class="nav nav-pills postList mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-post1-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-post1" type="button" role="tab"
-                                        aria-controls="pills-post1" aria-selected="true">
+                                    <button class="nav-link active" id="pills-post1-tab" data-bs-toggle="pill" data-bs-target="#pills-post1" type="button" role="tab" aria-controls="pills-post1" aria-selected="true">
                                         Latest
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-post2-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-post2" type="button" role="tab"
-                                        aria-controls="pills-post2" aria-selected="false">
+                                    <button class="nav-link" id="pills-post2-tab" data-bs-toggle="pill" data-bs-target="#pills-post2" type="button" role="tab" aria-controls="pills-post2" aria-selected="false">
                                         Top rated
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-post3-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-post3" type="button" role="tab"
-                                        aria-controls="pills-post3" aria-selected="false">
+                                    <button class="nav-link" id="pills-post3-tab" data-bs-toggle="pill" data-bs-target="#pills-post3" type="button" role="tab" aria-controls="pills-post3" aria-selected="false">
                                         Saved
                                     </button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-post1" role="tabpanel"
-                                    aria-labelledby="pills-post1-tab">
+                                <div class="tab-pane fade show active" id="pills-post1" role="tabpanel" aria-labelledby="pills-post1-tab">
                                     <div class="posts-cont">
-                                        <div class="notes-item"> 
+                                        <div class="notes-item">
                                             <div class="notes-list">
                                                 <h5><a href="#">Lorem ipsum dolor...</a></h5>
                                                 <ul>
@@ -880,15 +870,14 @@
                                                     <li><i class="fa-solid fa-comments"></i> 2</li>
                                                 </ul>
                                             </div>
-    
+
                                             <a href="#" class="seeall">See all</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-post2" role="tabpanel"
-                                    aria-labelledby="pills-post2-tab">
+                                <div class="tab-pane fade" id="pills-post2" role="tabpanel" aria-labelledby="pills-post2-tab">
                                     <div class="posts-cont">
-                                        <div class="notes-item"> 
+                                        <div class="notes-item">
                                             <div class="notes-list">
                                                 <h5><a href="#">Lorem ipsum dolor...</a></h5>
                                                 <ul>
@@ -910,15 +899,14 @@
                                                     <li><i class="fa-solid fa-comments"></i> 2</li>
                                                 </ul>
                                             </div>
-    
+
                                             <a href="#" class="seeall">See all</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-post3" role="tabpanel"
-                                    aria-labelledby="pills-post3-tab">
+                                <div class="tab-pane fade" id="pills-post3" role="tabpanel" aria-labelledby="pills-post3-tab">
                                     <div class="posts-cont">
-                                        <div class="notes-item"> 
+                                        <div class="notes-item">
                                             <div class="notes-list">
                                                 <h5><a href="#">Lorem ipsum dolor...</a></h5>
                                                 <ul>
@@ -940,7 +928,7 @@
                                                     <li><i class="fa-solid fa-comments"></i> 2</li>
                                                 </ul>
                                             </div>
-    
+
                                             <a href="#" class="seeall">See all</a>
                                         </div>
                                     </div>
@@ -951,7 +939,7 @@
                     <div class="discussion-categories pt-4">
                         <div class="my-post">
                             <div class="h5 title">Discussion Categories</div>
-                            
+
                         </div>
                         <div class="discussion-content">
                             <ul>
@@ -981,11 +969,17 @@
         </div>
     </main>
 
-    <div class="phone-block"> 
+    <div class="phone-block">
         <ul class="phoneFooter ">
-            <li><a href="#"><img src="assets/img/b-book.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-chet.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-user.png" alt=""></a></li>
+            <li>
+                <a href="#"><img src="assets/img/b-book.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-chet.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-user.png" alt=""></a>
+            </li>
         </ul>
     </div>
 

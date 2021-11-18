@@ -18,16 +18,21 @@
 
     <nav class="navbar navbar-expand-lg menu-area">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
             <div class="collapse navbar-collapse desktop-block">
                 <ul class="navbar-nav ms-auto menu-list">
-                    <li class="nav-item"><a class="nav-link" href="#"> Learn </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Community </a></li>
+                    <li class="nav-item"><a class="nav-link" href="learn.html"> Learn </a></li>
+                    <li class="nav-item"><a class="nav-link" href="notes.html"> Notes </a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html"> Forum </a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat/chat1.html"> Chat </a></li>
+                    <li class="nav-item"><a class="nav-link" href="sing-in.html"> Sing </a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link user-logo" href="#" data-bs-toggle="dropdown">
-                            User Name
+                            <div class="userN">
+                                User Name <img src="assets/img/icon/arrowDown.png">
+                            </div>
                             <img src="assets/img/user.png" alt="user">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end fade-down">
@@ -40,15 +45,12 @@
                 </ul>
             </div>
             <div class="phone-block">
-                <button class="phoneBars" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                <button class="phoneBars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                         class="fa-solid fa-bars"></i></button>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="menuClose-icon">
-                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas"
-                            aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
+                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="phoneMenu">
@@ -71,9 +73,7 @@
                         <div class="notes-top d-flex">
                             <div class="text">
                                 <h1>Learn more and help others</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus scelerisque egestas
-                                    viverra enim. In mus purus gravida sit. Faucibus cursus varius vel viverra amet
-                                    aliquam eleifend vestibulum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus scelerisque egestas viverra enim. In mus purus gravida sit. Faucibus cursus varius vel viverra amet aliquam eleifend vestibulum.</p>
                             </div>
                             <img src="assets/img/notes.png" alt="">
                         </div>
@@ -101,8 +101,7 @@
                             <div class="more-notes-item">
                                 <div class="h4">Lorem ipsum dolor sit amet</div>
                                 <div class="post-admin d-flex gap-3">
-                                    <img src="assets/img/user.png" alt="" width="50px" height="50px"
-                                        style="border-radius: 100px;">
+                                    <img src="assets/img/us1.png" alt="" width="50px" height="50px" style="border-radius: 100px;">
                                     <div class="post-admin-text align-self-center">
                                         <h6>Daniel Mason</h6>
                                         <ul class="gap-3 d-flex">
@@ -111,8 +110,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id.
-                                    Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id. Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
                                 </p>
                                 <div class="post-btns d-flex gap-3 pt-4">
                                     <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
@@ -126,8 +124,7 @@
                             <div class="more-notes-item">
                                 <div class="h4">Lorem ipsum dolor sit amet</div>
                                 <div class="post-admin d-flex gap-3">
-                                    <img src="assets/img/user.png" alt="" width="50px" height="50px"
-                                        style="border-radius: 100px;">
+                                    <img src="assets/img/us2.png" alt="" width="50px" height="50px" style="border-radius: 100px;">
                                     <div class="post-admin-text align-self-center">
                                         <h6>Daniel Mason</h6>
                                         <ul class="gap-3 d-flex">
@@ -136,8 +133,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id.
-                                    Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id. Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
                                 </p>
                                 <div class="post-btns d-flex gap-3 pt-4">
                                     <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
@@ -151,8 +147,7 @@
                             <div class="more-notes-item">
                                 <div class="h4">Lorem ipsum dolor sit amet</div>
                                 <div class="post-admin d-flex gap-3">
-                                    <img src="assets/img/user.png" alt="" width="50px" height="50px"
-                                        style="border-radius: 100px;">
+                                    <img src="assets/img/us3.png" alt="" width="50px" height="50px" style="border-radius: 100px;">
                                     <div class="post-admin-text align-self-center">
                                         <h6>Daniel Mason</h6>
                                         <ul class="gap-3 d-flex">
@@ -161,8 +156,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id.
-                                    Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id. Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
                                 </p>
                                 <div class="post-btns d-flex gap-3 pt-4">
                                     <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
@@ -176,8 +170,7 @@
                             <div class="more-notes-item">
                                 <div class="h4">Lorem ipsum dolor sit amet</div>
                                 <div class="post-admin d-flex gap-3">
-                                    <img src="assets/img/user.png" alt="" width="50px" height="50px"
-                                        style="border-radius: 100px;">
+                                    <img src="assets/img/us4.png" alt="" width="50px" height="50px" style="border-radius: 100px;">
                                     <div class="post-admin-text align-self-center">
                                         <h6>Daniel Mason</h6>
                                         <ul class="gap-3 d-flex">
@@ -186,8 +179,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id.
-                                    Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus amet nec id. Turpis sed donec eget et et blandit. Sem lectus aliquam mauris etiam quis etiam...
                                 </p>
                                 <div class="post-btns d-flex gap-3 pt-4">
                                     <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
@@ -208,8 +200,7 @@
                         </div>
                         <div class="writers-month-item">
                             <div class="post-admin d-flex gap-3">
-                                <img src="assets/img/user.png" alt="" width="80px" height="80px"
-                                    style="border-radius: 100px;">
+                                <img src="assets/img/us1.png" alt="" width="80px" height="80px" style="border-radius: 100px;">
                                 <div class="post-admin-text align-self-center">
                                     <h5>Daniel Mason</h5>
                                     <h4>16 Notes</h4>
@@ -219,8 +210,7 @@
                                 </div>
                             </div>
                             <div class="post-admin d-flex gap-3">
-                                <img src="assets/img/user.png" alt="" width="80px" height="80px"
-                                    style="border-radius: 100px;">
+                                <img src="assets/img/us2.png" alt="" width="80px" height="80px" style="border-radius: 100px;">
                                 <div class="post-admin-text align-self-center">
                                     <h5>Daniel Mason</h5>
                                     <h4>16 Notes</h4>
@@ -230,8 +220,7 @@
                                 </div>
                             </div>
                             <div class="post-admin d-flex gap-3">
-                                <img src="assets/img/user.png" alt="" width="80px" height="80px"
-                                    style="border-radius: 100px;">
+                                <img src="assets/img/us3.png" alt="" width="80px" height="80px" style="border-radius: 100px;">
                                 <div class="post-admin-text align-self-center">
                                     <h5>Daniel Mason</h5>
                                     <h4>16 Notes</h4>
@@ -246,38 +235,31 @@
                 <div class="col-lg-4 columns">
                     <div class="create-post-forum">
                         <div class="my-post">
-                            <div class="h5 title">My Posts</div>
+                            <div class="h5 title">My Notes</div>
                             <a href="#" class="create-new-post">
-                                <i class="fa-solid fa-plus"></i> Create New Post
+                                <img src="assets/img/icon/ant-design_plus-circle-outlined.png" alt=""> Create New Post
                             </a>
                         </div>
                         <div class="my-post-content">
                             <ul class="nav nav-pills postList mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-post1-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-post1" type="button" role="tab"
-                                        aria-controls="pills-post1" aria-selected="true">
+                                    <button class="nav-link active" id="pills-post1-tab" data-bs-toggle="pill" data-bs-target="#pills-post1" type="button" role="tab" aria-controls="pills-post1" aria-selected="true">
                                         Latest
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-post2-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-post2" type="button" role="tab"
-                                        aria-controls="pills-post2" aria-selected="false">
+                                    <button class="nav-link" id="pills-post2-tab" data-bs-toggle="pill" data-bs-target="#pills-post2" type="button" role="tab" aria-controls="pills-post2" aria-selected="false">
                                         Top rated
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-post3-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-post3" type="button" role="tab"
-                                        aria-controls="pills-post3" aria-selected="false">
+                                    <button class="nav-link" id="pills-post3-tab" data-bs-toggle="pill" data-bs-target="#pills-post3" type="button" role="tab" aria-controls="pills-post3" aria-selected="false">
                                         Saved
                                     </button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-post1" role="tabpanel"
-                                    aria-labelledby="pills-post1-tab">
+                                <div class="tab-pane fade show active" id="pills-post1" role="tabpanel" aria-labelledby="pills-post1-tab">
                                     <div class="posts-cont">
                                         <div class="notes-item">
                                             <div class="notes-list">
@@ -306,8 +288,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-post2" role="tabpanel"
-                                    aria-labelledby="pills-post2-tab">
+                                <div class="tab-pane fade" id="pills-post2" role="tabpanel" aria-labelledby="pills-post2-tab">
                                     <div class="posts-cont">
                                         <div class="notes-item">
                                             <div class="notes-list">
@@ -336,8 +317,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-post3" role="tabpanel"
-                                    aria-labelledby="pills-post3-tab">
+                                <div class="tab-pane fade" id="pills-post3" role="tabpanel" aria-labelledby="pills-post3-tab">
                                     <div class="posts-cont">
                                         <div class="notes-item">
                                             <div class="notes-list">
@@ -438,8 +418,7 @@
                             </div>
                             <div class="all-notes-subBox-right ms-auto align-self-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-secondary dropdown-toggle"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-arrow-up-short-wide"></i> Latest
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end">
@@ -457,8 +436,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us1.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -483,8 +462,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us2.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -509,8 +488,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us3.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -535,8 +514,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us4.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -561,8 +540,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us5.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -587,8 +566,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us6.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -613,8 +592,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us7.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -639,8 +618,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us8.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -665,8 +644,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us1.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -691,8 +670,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us2.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -717,8 +696,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us3.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -743,8 +722,8 @@
                             <div class="all-note-item">
                                 <div class="community-rated-left">
                                     <div class="all-imgts">
-                                        <img src="assets/img/user.png" alt="">
-                                        
+                                        <img src="assets/img/us4.png" alt="">
+
                                     </div>
                                     <div class="community-list">
                                         <h5>Lorem ipsum dolor sit amet</h5>
@@ -766,7 +745,7 @@
                                     <li><a href="#"><i class="fa-solid fa-bitcoin-sign"></i></a></li>
                                 </ul>
                             </div>
-                        </div> 
+                        </div>
                         <div class="text-center moreBtn pt-3 pb-5">
                             <button class="theme-btn btn-md">Load More</button>
                         </div>
@@ -776,11 +755,17 @@
         </div>
     </main>
 
-    <div class="phone-block"> 
+    <div class="phone-block">
         <ul class="phoneFooter ">
-            <li><a href="#"><img src="assets/img/b-book.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-chet.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-user.png" alt=""></a></li>
+            <li>
+                <a href="#"><img src="assets/img/b-book.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-chet.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-user.png" alt=""></a>
+            </li>
         </ul>
     </div>
 
@@ -795,7 +780,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <script src="assets/js/min.js"></script>
-    
+
 
 </body>
 

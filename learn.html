@@ -18,16 +18,21 @@
 
     <nav class="navbar navbar-expand-lg menu-area">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
             <div class="collapse navbar-collapse desktop-block">
                 <ul class="navbar-nav ms-auto menu-list">
-                    <li class="nav-item"><a class="nav-link" href="#"> Learn </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Community </a></li>
+                    <li class="nav-item"><a class="nav-link" href="learn.html"> Learn </a></li>
+                    <li class="nav-item"><a class="nav-link" href="notes.html"> Notes </a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html"> Forum </a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat/chat1.html"> Chat </a></li>
+                    <li class="nav-item"><a class="nav-link" href="sing-in.html"> Sing </a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link user-logo" href="#" data-bs-toggle="dropdown">
-                            User Name
+                            <div class="userN">
+                                User Name <img src="assets/img/icon/arrowDown.png">
+                            </div>
                             <img src="assets/img/user.png" alt="user">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end fade-down">
@@ -40,15 +45,12 @@
                 </ul>
             </div>
             <div class="phone-block">
-                <button class="phoneBars" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                <button class="phoneBars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                         class="fa-solid fa-bars"></i></button>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="menuClose-icon">
-                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas"
-                            aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
+                        <button type="button" class="text-reset menuClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="phoneMenu">
@@ -69,7 +71,7 @@
                 <div class="col-lg-12">
                     <div class="learn-header">
                         <h1>The Rust Programming Language</h1>
-                        <div class="learn-header-btn d-flex gap-3 pt-3">
+                        <div class="learn-header-btn d-flex gap-2 pt-3">
                             <a href="#" class="theme-btn">Foreword</a>
                             <a href="#" class="theme-btn">Introduction</a>
                         </div>
@@ -205,11 +207,17 @@
         </div>
     </main>
 
-    <div class="phone-block"> 
+    <div class="phone-block">
         <ul class="phoneFooter ">
-            <li><a href="#"><img src="assets/img/b-book.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-chet.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/b-user.png" alt=""></a></li>
+            <li>
+                <a href="#"><img src="assets/img/b-book.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-chet.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/img/b-user.png" alt=""></a>
+            </li>
         </ul>
     </div>
 
@@ -224,7 +232,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <script src="assets/js/min.js"></script>
- 
+
 
 </body>
 
